@@ -41,6 +41,7 @@
   <!-- Education -->
   <section class="mb-8" id="education">
     <h2 class="text-2xl font-bold mb-4 text-base-content">Education</h2>
+    <div class="full-width-line"></div>
     <div class="grid gap-6">
       <% site.data.cv.education.forEach(function(edu) { %>
         <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
@@ -67,6 +68,7 @@
   <!-- Professional Experience -->
   <section class="mb-8" id="experience">
     <h2 class="text-2xl font-bold mb-4 text-base-content">Experience</h2>
+    <div class="full-width-line"></div>
     <div class="grid gap-6">
       <% site.data.cv.experience.forEach(function(exp) { %>
         <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
@@ -97,6 +99,7 @@
   <!-- Awards & Honors -->
   <section class="mb-8" id="awards">
     <h2 class="text-2xl font-bold mb-4 text-base-content">Awards & Honors</h2>
+    <div class="full-width-line"></div>
     <div class="grid gap-6">
       <% site.data.cv.awards.forEach(function(award) { %>
         <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
@@ -124,6 +127,7 @@
   <!-- Skills -->
   <section class="mb-8" id="skills">
     <h2 class="text-2xl font-bold mb-4 text-base-content">Skills</h2>
+    <div class="full-width-line"></div>
     <div class="grid gap-6">
       <% for (const [category, skills] of Object.entries(site.data.cv.skills)) { %>
         <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
@@ -144,20 +148,39 @@
 
   <!-- Languages -->
   <section class="mb-8" id="languages">
-  <h2 class="text-2xl font-bold mb-4 text-base-content">Languages</h2>
-  <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 p-6">
-    <div class="flex flex-wrap gap-3">
-      <% site.data.cv.languages.forEach(function(lang) { %>
-        <div class="px-4 py-4 bg-base-200 rounded-md shadow-sm text-sm flex items-center gap-2 whitespace-nowrap">
-          <span class="font-semibold"><%= lang.name %></span>
-          <span class="text-xs opacity-70">(<%= lang.level %>)</span>
-        </div>
-      <% }); %>
+    <h2 class="text-2xl font-bold mb-4 text-base-content">Languages</h2>
+    <div class="full-width-line"></div>
+    <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 p-6">
+      <div class="flex flex-wrap gap-3">
+        <% site.data.cv.languages.forEach(function(lang) { %>
+          <div class="px-4 py-4 bg-base-200 rounded-md shadow-sm text-sm flex items-center gap-2 whitespace-nowrap">
+            <span class="font-semibold"><%= lang.name %></span>
+            <span class="text-xs opacity-70">(<%= lang.level %>)</span>
+          </div>
+        <% }); %>
+      </div>
     </div>
-  </div>
-</section>
-
-
-
-
+  </section>
+  
 </div>
+
+<style>
+.full-width-line {
+  height: 1px;
+  background: #e2e8f0; /* 浅灰色 */
+  margin: 1rem 0 2rem; /* 上下间距 */
+  width: 100%;
+  position: relative;
+}
+
+/* 可选装饰效果 */
+.full-width-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 160px;
+  height: 3px;
+  background: #5596ffa0; /* 蓝色点缀 */
+}
+</style>

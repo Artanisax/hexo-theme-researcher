@@ -106,13 +106,11 @@
                 </a>
               <% } %>
             </div>
-            <div class="badge-primary ml-auto">
-              <i>
+            <div class="badge-primary semi-bold ml-auto">
                 <%= pub.venue + ' ' + pub.year%>
                 <% if (pub.status) { %>
                   (<%= pub.status %>)
                 <% } %>
-              </i>
             </div>
           </div>
         </div>
@@ -158,3 +156,11 @@
   // 初始化显示全部
   filterPublications();
 </script>
+
+<style>
+.semi-bold {
+  font-weight: 200;
+  color: inherit;
+  text-shadow: -0.1px 0 0 currentColor;
+}
+</style>

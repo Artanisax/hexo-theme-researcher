@@ -22,12 +22,11 @@ menu:
 
 # CV Download
 cv:
-  download_link: https://www.nature.com/articles/d41586-025-01882-7.pdf # Optional: use a file in your repository but not an online link.
+  download_link: https://artanisax.github.io/uploads/CV_Kangrui_Chen.pdf # Optional: use a file in your repository but not an online link.
 
 # About
 about:
-  I am a researcher passionate about artificial intelligence.
-  My work focuses on leveraging machine learning to solve real-world problems.
+  Hi, this is Kangrui Chen from China, a student passionate about Artificial Intelligence and other technologies applied to Audio, especially Music.
   <br><br>
   Outside of research, I am a self-learning music producer and sound designer.
 
@@ -60,38 +59,38 @@ baidu_tongji: your_baidu_tongji_id
 daisyui:
   default: wireframe
   enabled:
-    - light
+    # - light
     - dark
-    - cupcake
-    - bumblebee
+    # - cupcake
+    # - bumblebee
     - emerald
     - corporate
-    - synthwave
-    - retro
-    - cyberpunk
-    - valentine
-    - halloween
-    - garden
+    # - synthwave
+    # - retro
+    # - cyberpunk
+    # - valentine
+    # - halloween
+    # - garden
     - forest
-    - aqua
+    # - aqua
     - lofi
-    - pastel
-    - fantasy
+    # - pastel
+    # - fantasy
     - wireframe
-    - black
-    - luxury
-    - dracula
-    - cmyk
-    - autumn
-    - business
-    - acid
-    - lemonade
+    # - black
+    # - luxury
+    # - dracula
+    # - cmyk
+    # - autumn
+    # - business
+    # - acid
+    # - lemonade
     - night
-    - coffee
-    - winter
+    # - coffee
+    # - winter
     - dim
-    - nord
-    - sunset
+    # - nord
+    # - sunset
     - caramellatte
-    - abyss
+    # - abyss
     - silk
