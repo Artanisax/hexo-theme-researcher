@@ -22,7 +22,7 @@ menu:
 
 # CV Download
 cv:
-  download_link: https://artanisax.github.io/uploads/CV_Kangrui_Chen.pdf # Optional: use a file in your repository but not an online link.
+  download_link: https://github.com/Artanisax/portfolio/blob/main/CV_Kangrui_Chen.pdf # Optional: use a file in your repository but not an online link.
 
 # About
 about:
